@@ -2,6 +2,8 @@
     "name": "tradecentric/xframe",
     "description": "N/A",
     "require": {
+        "php": "~7.3.0||~7.4.0||^8.0",
+        "tradecentric/module-punchout": "^3.0"
     },
     "suggest": {
     },
