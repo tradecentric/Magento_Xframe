@@ -49,7 +49,7 @@ class Keyvalue extends \Magento\Framework\App\Config\Value
     protected function _afterLoad()
     {
         $value = $this->getValue();
-        $value = json_decode($value,true);
+        $value = json_decode((string) $value,true);
         if (isset($value['__empty'])) {
             unset($value['__empty']);
         }
@@ -68,7 +68,7 @@ class Keyvalue extends \Magento\Framework\App\Config\Value
         if (isset($value['__empty'])) {
             unset($value['__empty']);
         }
-        $value = json_encode($value);
+        $value = json_encode((array) $value);
         //$value = $this->_catalogInventoryMinsaleqty->makeStorableArrayFieldValue($value);
         $this->setValue($value);
     }

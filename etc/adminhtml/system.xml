@@ -48,7 +48,7 @@
                 <label>Store</label>
                 <field id="comment" translate="label comment" type="note" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Notice</label>
-                    <frontend_model>Punchout2go\Xframe\Block\Forms\Config\Comment</frontend_model>
+                    <frontend_model>Punchout2Go\Xframe\Block\Forms\Config\Comment</frontend_model>
                     <comment>This module only works if the webserver forced configuration is disable pub/.htaccess</comment>
                 </field>
 
@@ -75,8 +75,8 @@
                 </field>
                 <field id="header_advanced" translate="label" sortOrder="15" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="0">
                     <label>User Header</label>
-                    <frontend_model>Punchout2go\Xframe\Block\Adminhtml\Form\Field\Keyvalue</frontend_model>
-                    <backend_model>Punchout2go\Xframe\Model\System\Config\Backend\Keyvalue</backend_model>
+                    <frontend_model>Punchout2Go\Xframe\Block\Adminhtml\Form\Field\Keyvalue</frontend_model>
+                    <backend_model>Punchout2Go\Xframe\Model\System\Config\Backend\Keyvalue</backend_model>
                     <comment>
                         <![CDATA[
                         * = default for any unmatched customers<br>
@@ -90,7 +90,7 @@
                 <label>Version</label>
                 <field id="version" translate="label" type="text" sortOrder="110" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Current Versions</label>
-                    <frontend_model>Punchout2go\Xframe\Block\Forms\Config\Version</frontend_model>
+                    <frontend_model>Punchout2Go\Xframe\Block\Forms\Config\Version</frontend_model>
                 </field>
             </group>
         </section>
