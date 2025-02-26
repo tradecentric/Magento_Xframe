@@ -6,11 +6,11 @@
         "OSL-3.0",
         "AFL-3.0"
     ],
-    "version": "1.0.1",
+    "version": "1.0.2",
     "require": {
         "php": "~7.3.0||~7.4.0||^8.0",
-        "tradecentric/module-version": "^3.0",		
-        "tradecentric/module-punchout": "^3.0"
+        "tradecentric/module-version": "*",		
+        "tradecentric/module-punchout": "*"
     },
     "suggest": {
     },
