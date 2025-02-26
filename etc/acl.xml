@@ -6,7 +6,7 @@
                 <resource id="Magento_Backend::stores">
                     <resource id="Magento_Backend::stores_settings">
                         <resource id="Magento_Config::config">
-                            <resource id="Punchout2go_Xframe::config_xframe" title="TradeCentric X-Frame" sortOrder="1100"/>
+                            <resource id="Punchout2go_Xframe::config_xframe" title="TradeCentric X-Frame" sortOrder="1600"/>
                         </resource>
                     </resource>
                 </resource>

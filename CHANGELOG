@@ -1,5 +1,8 @@
 TradeCentric - Xframe
 ===========
+### 1.0.2 (2025-02-26)
+* Added ACL support for Role management
+
 ### 1.0.1 (2023-01-19)
 * Fixed a bug with setting screen not showin in the Magento Admin
 
