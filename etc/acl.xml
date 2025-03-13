@@ -6,11 +6,7 @@
                 <resource id="Magento_Backend::stores">
                     <resource id="Magento_Backend::stores_settings">
                         <resource id="Magento_Config::config">
-<<<<<<< HEAD
                             <resource id="Punchout2go_Xframe::config_xframe" title="TradeCentric X-Frame" sortOrder="1600"/>
-=======
-                            <resource id="Punchout2go_Xframe::config_xframe" title="TradeCentric X-Frame" sortOrder="1100"/>
->>>>>>> e2d64bc (Revert "Revert "CN-564"")
                         </resource>
                     </resource>
                 </resource>
