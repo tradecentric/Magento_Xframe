@@ -1,10 +1,10 @@
 TradeCentric - Xframe
 ===========
+### 1.0.3 (2025-08-12)
+* PBR-2419: Added support for PHP 8.4 compatibility with Magento 2.4.8
+
 ### 1.0.2 (2025-02-26)
 * PBR-2329: Added ACL support for Role management
 
 ### 1.0.1 (2023-01-19)
 * Fixed a bug with setting screen not showin in the Magento Admin
-
-
-* Initial release

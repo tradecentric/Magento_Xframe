@@ -6,7 +6,8 @@
         "OSL-3.0",
         "AFL-3.0"
     ],
-    "version": "1.0.2",
+	"__note": "see etc/module.xml for version number",
+    "version": "",
     "require": {
         "php": "^7.0||^8.0",
         "tradecentric/module-version": "*",		
