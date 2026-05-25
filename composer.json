@@ -6,7 +6,6 @@
         "OSL-3.0",
         "AFL-3.0"
     ],
-	"__note": "see etc/module.xml for version number",
     "version": "1.0.3",
     "require": {
         "php": "^7.0||^8.0",
