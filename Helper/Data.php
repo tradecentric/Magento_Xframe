@@ -141,7 +141,7 @@ class Data extends AbstractHelper
             }
             $this->debug('user '. $user_attribute .' => '. $user_value);
             $advanced_config = $this->getConfig('punchout2go_xframe/advanced/header_advanced');
-            $headers = json_decode($advanced_config,true);
+            $headers = json_decode((string) $advanced_config,true);
             if (!empty($headers)
                 && is_array($headers)) {
                 $this->debug('matching data',$headers);
@@ -152,7 +152,7 @@ class Data extends AbstractHelper
                         && isset($option['header'])) {
                         if ($option['user_value'] == $user_value) {
                             return $option['header'];
-                        } elseif ($option['user_value'] = '*') {
+                        } elseif ($option['user_value'] == '*') {
                             $default = $option['header'];
                         }
                     }
@@ -247,7 +247,7 @@ class Data extends AbstractHelper
     public function getConfigFlag($config_path)
     {
         $store = $this->storeManager->getStore()->getId();
-        return (boolean) $this->scopeConfig->getValue($config_path,'store',$store);
+        return (bool) $this->scopeConfig->getValue($config_path,'store',$store);
     }
 
 }
