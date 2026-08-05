@@ -139,7 +139,7 @@ class Data extends AbstractHelper
             } else {
                 $user_value = '_no_customer';
             }
-            $this->debug('user '. $user_attribute .' => '. $user_value);
+            $this->debug('user '. $user_attribute .' => '. (string) $user_value);
             $advanced_config = $this->getConfig('punchout2go_xframe/advanced/header_advanced');
             $headers = json_decode((string) $advanced_config,true);
             if (!empty($headers)
