@@ -38,25 +38,6 @@ class Debug extends Base
         //    $this->fileName = $this->punchout_fileName;
         //}
 
-        // check if any handler will handle this message so we can return early and save cycles
-        $handlerKey = null;
-        $level = $this->loggerType;
-
-        if (!self::$timezone) {
-            self::$timezone = new \DateTimeZone(date_default_timezone_get() ?: 'UTC');
-        }
-
-        $record = array(
-            'message'    => (string)$message,
-            'context'    => $context,
-            'level'      => $level,
-            'level_name' => 'DEBUG',
-            'channel'    => $this->name,
-            'datetime'   => \DateTime::createFromFormat('U.u', sprintf('%.6F', microtime(true)),
-                static::$timezone)->setTimezone(static::$timezone),
-            'extra'      => array(),
-        );
-
-        $this->handle($record);
+        (new \Monolog\Logger($this->name, [$this]))->addRecord($this->loggerType, (string) $message, $context);
     }
 }

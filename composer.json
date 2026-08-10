@@ -6,7 +6,7 @@
         "OSL-3.0",
         "AFL-3.0"
     ],
-    "version": "1.0.4",
+    "version": "1.0.5",
     "require": {
         "php": "^7.0||^8.0",
         "tradecentric/module-version": "*",
